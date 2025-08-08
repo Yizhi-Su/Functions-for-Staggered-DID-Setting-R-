@@ -5,7 +5,7 @@ The idea is to randomly assign placebo treatment to units that were never treate
 
 By comparing the actual estimated effect to the distribution of placebo estimates, one can evaluate whether the observed treatment effect might be driven by spurious identification or chance patterns.
 
-The document includes two main functions:
+The document includes two functions:
 
 - A **TWFE-based** placebo test function using traditional two-way fixed effects estimation.
 - A **did_multiplegt-based** placebo test function using the method of de Chaisemartin & D'Haultfœuille for staggered adoption.
