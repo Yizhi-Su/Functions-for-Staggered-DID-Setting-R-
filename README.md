@@ -9,3 +9,10 @@ The document includes two functions:
 
 - A **TWFE-based** placebo test function using traditional two-way fixed effects estimation.
 - A **did_multiplegt-based** placebo test function using the method of de Chaisemartin & D'Haultfœuille for staggered adoption.
+
+## match_single_variable
+This function constructs matched control groups for staggered treatment adoption based on nearest-neighbor matching using the Euclidean distance of a single outcome variable. 
+
+For each treatment year T, treated units are matched to never-treated units using pre-treatment outcomes from $T−k$ to $T−m$ (user-specified). Matching quality is evaluated using the average absolute difference in outcomes during $T−q$ to $T−1$ (user-specified), and matches are retained only if this difference is below a user-defined tolerance.
+
+The output is a list of matched datasets for each treatment cohort.
